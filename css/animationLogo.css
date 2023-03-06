@@ -1,0 +1,28 @@
+image{
+    height: 10cm;
+    width: 10cm;
+    padding: 50%;
+}
+
+/* The animation code*/
+/*@keyframes social{
+    0%{background-color: rgb(46, 46, 136);}
+    100%{background-color: aqua;}
+}*/
+
+/*The element to apply the animation to*/
+/*div{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(46, 46, 136);
+    animation-name: social;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}*/
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: darkolivegreen;
+    padding-top: 100px;
+}
