@@ -1,28 +1,43 @@
-image{
-    height: 10cm;
-    width: 10cm;
-    padding: 50%;
+/* The Animation Code*/
+@keyframes linkedin{
+0% {
+    border-radius:0%;
+    filter: opacity(0deg);
+}
+25%{
+    border-radius: 100%;
+    filter: hue-rotate(180deg);
+    transform: rotate(180deg);
+}
+50%{
+    border-radius: 50%;
+    filter:hue-rotate(90deg);
+    transform: rotate(90deg);
+}
+75%{
+    border-radius: 100%;
+    filter: hue-rotate(-180deg);
+    transform: rotate(-180deg);
+}
+100%{
+    border-radius: 0%;
+    filter: blur(180deg);
+}
 }
 
-/* The animation code*/
-/*@keyframes social{
-    0%{background-color: rgb(46, 46, 136);}
-    100%{background-color: aqua;}
-}*/
+/* The element to apply the animation to*/
+body{
+    display:flex;
+    justify-content: center;
+    padding:100px;
+    background-color: wheat;
+}
 
-/*The element to apply the animation to*/
-/*div{
+img{
+    margin:5%;
     width: 100px;
     height: 100px;
-    background-color: rgb(46, 46, 136);
-    animation-name: social;
-    animation-duration: 3s;
+    animation-name: linkedin;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-}*/
-
-body{
-    display: flex;
-    justify-content: center;
-    background-color: darkolivegreen;
-    padding-top: 100px;
 }
